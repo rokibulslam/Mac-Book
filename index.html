@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mac-book-pro</title>
     <!-- style with Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
     <main>
-        <div class="d-flex ">
+        <section class="d-flex ">
             <!--product image -->
             <div class="m-auto p-5">
                 <img  class="img-fluid" src="images/mac.png" alt="">
@@ -37,11 +37,10 @@
                 <div class="mb-5 mt-3">
                     <h6>Choose your delivery option</h6>
                     <button id="btn-shipping-regular" type="button" class="btn m-2 btn-md btn-primary fs-6 text" >Friday, Aug 25 FREE Prime Delivery</button>
-                    <button id="btn-shipping-fast" type="button" class="btn m-2 btn-md btn-primary fs-6 text" >Friday, Aug 21 FREE Prime Delivery</button>
+                    <button id="btn-shipping-fast" type="button" class="btn m-2 btn-md btn-primary fs-6 text" >Friday, Aug 21 Delivery charge $20</button>
                 </div>
                 <!-- cost details and cart-->
                 <table class="table w-50">
-                    
                     <tbody>
                       <tr>
                         <th scope="row">Best price</th>
@@ -58,14 +57,13 @@
                       
                       <tr class="border-0">
                         <th scope="row">Delivery Charge</th>
-                        <td>$ <span id="delivery-price">0</span></td>
+                        <td>$ <span id="delivery-charge">0</span></td>
                       </tr>
                       <tr>
                         <th class="border-bottom-0" scope="row">Total Price</th>
                         <td class="border-bottom-0">$ <span id="total-price">0</span></td>
                       </tr>
                     </tbody>
-                    
                   </table>
                 <!-- promo code -->
                 <div class="w-50">
@@ -74,9 +72,12 @@
                     <button id="btn-promo-code" class="btn-danger">Apply</button>
                 </div>
             </div>
-        </div>
+        </section>
         <hr>
-        <h4 class="text-center">Total: $ <span id="total-promo-price">1299</span></h4>
+        <!-- total price and discount promo price  -->
+        <section>
+          <h4 class="text-center">Total: $ <span id="total-promo-price">1299</span></h4>
+        </section>
     </main>
     <!-- javascript link  -->
     <script src="script.js"></script>
