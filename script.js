@@ -35,6 +35,8 @@ function discountTotal(){
         const grandTotalAmount = parseInt(grandTotalAmountText.innerText) ;
         const promoAmount = grandTotalAmount - discount;
         grandTotalAmountText.innerText = promoAmount;
+        // input empty
+        promoCodeInput.value = '';
     }
 }
 
